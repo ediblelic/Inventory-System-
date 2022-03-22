@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style_register.css' %}">
+    <title>Login</title>
+</head>
+<body>
+    <div id="login-box">
+        <div class="left">
+            <form method="post" action="">
+          <h1>Login</h1>
+          {% csrf_token %}
+          
+        <input type="text" name="username" placeholder="Username" />
+
+        <input type="password" name="password" placeholder="Password" />
+        
+          
+          <input type="submit" name="signup_submit" value="Login" />
+          
+         
+          {%for x in messages%}
+            <p style="font-size: 18px; position: absolute;color: #2596be;">{{x}}</p>
+          {%endfor%}
+          <a style="position: absolute; margin-top: 80px; margin-left: -120px; color: #2596be; text-decoration: none; margin-top: 230px;"  href="../register"> Register Now</a>
+        </div>
+            </form>
+        <div class="right">
+          <span class="loginwith">Sign in with<br />social network</span>
+          
+          <button class="social-signin facebook">Log in with facebook</button>
+          <button class="social-signin twitter">Log in with Twitter</button>
+          <button class="social-signin google">Log in with Google+</button>
+        </div>
+        <div class="or">OR</div>
+      </div>
+
+  
+</body>
+</html>
+
+
+

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style_reports.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--link for font awesome: -->
+    <script src="https://kit.fontawesome.com/3a2b272b3f.js" crossorigin="anonymous"></script>
+    <title>Inventory System | Reports</title>
+</head>
+<body>
+    <div class="container">
+        <div class="flex_itme_1">
+            <h3>INVENTORY SYSTEM</h3>
+            
+        </div>
+        <div class="flex_itme_2">
+            <img class="sun"  id="light" src="../../../static/light_mode.png" alt="">
+            <img src="../../../static/light_mode_off1.png" class='sun-off' id="sunoff" alt="">
+            <img class="moon" id="dark" src="../../../static/dark_mode_off.png" alt="">
+            <img src="../../../static/dark_mode_on.png" class="dark-on" id="darkon" alt="">
+            
+            <img id='menu'src="../../../static/menu.png" alt="">
+        </div>
+        
+    </div>
+    <div class="hero-section">
+        <div class="side-bar" id="side_bar">
+            
+            <ul>
+                <i><a href="../"><li><i class="fa fa-tachometer"></i> Dashboard </li></a></i>
+                <i><a href="../users"><li><i class="fa fa-group"></i> Users </li></a></i>
+                <i><a href="../groups"><li><i class="fa fa-address-book"></i> Groups </li></a></i>
+                <i><a href="../brands"><li ><i class="fa fa-tag"></i> Brands </li></a></i>
+                <i><a href="../category"><li><i class="fa fa-qrcode"></i> Category </li></a></i>       
+                <i><a href="../stores"><li><i class="fa fa-shopping-cart"></i> Stores </li></a></i>              
+                <i><a href="../attributes"><li><i class="fa fa fa-info-circle"></i> Attributes </li></a></i>
+                <i><a href="../products"><li><i class="fa fa-cubes"></i> Products </li></a></i>
+                <i><a href="../orders"><li><i class="fa fa-money"></i> Orders </li></a></i>
+               
+                <i><a href=""><li class="dash"><i class="fa fa-bullhorn"></i> Reports </li></a></i>
+                
+                <i><a href="../company"><li><i class="fa fa-institution"></i> Company </li></a></i>
+                <i><a href="../profile"><li><i class="fa fa-address-card-o"></i> Profile </li></a></i>
+                <i><a href="../settings"><li><i class="fa fa-wrench"></i> Settings </li></a></i>
+                <i><a href="{% url 'logout'%}"><li><i class="fa fa-mail-reply"></i> Logout </li></a></i>
+            </ul>
+        </div>
+        <div class="main-section" id="main-section">
+            <!-- Glavna sekcija sajta desni grid, gdje se nalazi dashboard
+            
+                samo ovo sekciju mjenjati
+            -->
+            <!--start: Title-->
+            <div class="TitleBar">
+                <div class="Title">
+                    <div class="tracking-in-contract-bck" id="Dashboard">
+                        <h2 >Reports</h2>
+                        <div class="SiteLocation"> 
+                            <div class="Home">
+                                <h4> <span class="HomeIcon"> <i class="fa-solid fa-house"></i> </span>  Home  <span class="LocationArrow"> <i class="fa-solid fa-arrow-right"></i> </span>  </h4>
+                            </div>
+                            <div class="Section">  
+                                <h5> Reports</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end: Title-->
+
+            <!--start: Period-->
+            <div class="FirstBoxMain"> 
+            <div class="EntriesSelect">
+                    <div class="left">
+                        <p>Year</p> 
+                        <select>
+                            <option value=""> 2021 </option>
+                            <option value=""> 2020 </option>
+                            <option value=""> 2019 </option>
+                            <option value=""> 2018 </option>
+                            <option value=""> 2017 </option>
+                        </select>
+                    </div>
+                    <div class="left">
+                        <p>Product</p> 
+                        <select class="Product">
+                            <option value=""> Product 1 </option>
+                            <option value=""> Product 2 </option>
+                            <option value=""> Product 3 </option>
+                            <option value=""> Product 4 </option>
+                            <option value=""> Product 5 </option>
+                        </select>
+                    </div>
+                    <div class="right">
+                        <a href="#"> <button class="BtnSubmit">Submit</button> </a>
+                    </div>
+                </div>
+            </div>
+            <!--end: Period-->
+
+            <!--start: Chart Title-->
+            <div class="FirstBoxMain"> <h4>Total Product 1 - Report</h4> </div>
+            <!--start: Chart Title-->
+
+            <!--start: Boxmain 2-->
+            <div id="BoxMain">
+                <!--start: Report Chart-->
+                <div class="Chart">
+                    <ul class="Numbers">
+                        <li><span>500</span></li>
+                        <li><span>450</span></li>
+                        <li><span>400</span></li>
+                        <li><span>350</span></li>
+                        <li><span>300</span></li>
+                        <li><span>250</span></li>
+                        <li><span>200</span></li>
+                        <li><span>150</span></li>
+                        <li><span>100</span></li>
+                        <li><span>50</span></li>
+                        <li><span>0</span></li>
+                    </ul>
+                    <ul class="Bars">
+                        <li><div id="Bar" class="BarJan" month="100"></div><span>January</span></li>
+                        <li><div id="Bar" class="BarFeb" month="50"></div><span>February</span></li>
+                        <li><div id="Bar" class="BarMar" month="200"></div><span>March</span></li>
+                        <li><div id="Bar" class="BarApr" month="350"></div><span>April</span></li>
+                        <li><div id="Bar" class="BarMay" month="100"></div><span>May</span></li>
+                        <li><div id="Bar" class="BarJun" month="250"></div><span>June</span></li>
+                        <li><div id="Bar" class="BarJul" month="400"></div><span>July</span></li>
+                        <li><div id="Bar" class="BarAug" month="500"></div><span>August</span></li>
+                        <li><div id="Bar" class="BarSep" month="300"></div><span>September</span></li>
+                        <li><div id="Bar" class="BarOct" month="450"></div><span>Ocotober</span></li>
+                        <li><div id="Bar" class="BarNov" month="100"></div><span>November</span></li>
+                        <li><div id="Bar" class="BarDec" month="250"></div><span>December</span></li>
+                    </ul>
+                </div>
+                <!--end: Report Chart-->
+            </div>
+            <!--end: Boxmain 2-->
+
+            <br>
+
+            <!--start: Chart Title-->
+            <div class="FirstBoxMain"> <h4>Total Paid Orders - Report Data</h4> </div>
+            <!--start: Chart Title-->
+            
+            <!--start: Boxmain 3-->
+            <div id="BoxMain">
+                <!--start: Table-->
+                <div class="Table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Month - Year</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2021 - 01</td>
+                                <td>$ 100</td>
+                            </tr>
+                            <tr>
+                                <td>2021 - 02</td>
+                                <td>$ 50</td>
+                            </tr>
+                            <tr>
+                                <td>2021 - 03</td>
+                                <td>$ 200</td>
+                            </tr>
+                            <tr>
+                                <td>2021 - 04</td>
+                                <td>$ 350</td>
+                            </tr>
+                            <tr>
+                                <td>2021 - 05</td>
+                                <td>$ 100</td>
+                            </tr>
+                            <tr>
+                                <td>2021 - 06</td>
+                                <td>$ 250</td>
+                            </tr>
+                            <tr>
+                                <td>2021 - 07</td>
+                                <td>$ 400</td>
+                            </tr>
+                            <tr>
+                                <td>2021 - 08</td>
+                                <td>$ 500</td>
+                            </tr>
+                            <tr>
+                                <td>2021 - 09</td>
+                                <td>$ 300</td>
+                            </tr>
+                            <tr>
+                                <td>2021 - 10</td>
+                                <td>$ 450</td>
+                            </tr>
+                            <tr>
+                                <td>2021 - 11</td>
+                                <td>$ 100</td>
+                            </tr>
+                            <tr>
+                                <td>2021 - 12</td>
+                                <td>$ 250</td>
+                            </tr>
+                            <tr class="TableSum">
+                                <td>Total Amount</td>
+                                <td>$ 3050</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--end: Table-->                     
+            </div>
+            <!--end: Boxmain 3-->
+    </div>
+<script src="../../../static/dark.js"></script>
+<script src="../../../static/hamburger_effect.js"></script>
+
+
+</body>
+</html>

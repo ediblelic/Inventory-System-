@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body
+{
+    overflow-x: hidden;
+    background-color: #eee;
+    transition: 1s;
+}
+
+.container
+{
+    display: flex;
+    align-items: flex-start;
+    margin-left: -8px;
+    margin-top: -8px;
+    margin-right: -10px;
+    background-image: url('/static/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex_itme_1
+{
+    
+    
+    
+    
+    width: 300px;
+    padding-left: 50px;
+    
+}
+.flex_itme_2
+{
+    
+   
+   
+    width: 88%;
+   height: 59px;
+  padding-left: 10px;
+  
+  margin-left: -10px;
+    
+}
+.flex_itme_2 h3
+{
+    text-align: right;
+    
+}
+.sun-off
+{
+  width: 51px;
+  float: right;
+  margin-right: -48px;
+  margin-top: 6px;
+  visibility: hidden;
+}
+.sun
+{
+    height: 40px;
+    width: 40px;
+    float: right;
+    padding-right: 10px;
+    margin-top: 8px;
+    
+}
+
+.dark-on
+{
+  width: 38px;
+  float: right;
+  margin-right: -37px;
+  margin-top: 10px;
+  visibility: hidden;
+}
+.moon
+{
+  
+    width: 38px;
+    float: right;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+.light_moon
+{
+    width: 40px;
+    float: right;
+    margin-left: 0px;
+    margin-top: 7px;
+}
+.hero-section
+{
+    display: grid;
+    grid-template-columns: 21% 76%;
+    transition: all 3s;
+    
+}
+
+.side-bar
+{
+  
+    margin-left: -10px;
+    height: 200vh;
+    margin-top: 0px;
+    background-color: #141815;
+    transition: ease-out 0.5s;
+    
+    
+    
+}
+.side-bar ul a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    
+   
+}
+
+
+.side-bar ul a li 
+{
+    list-style: none;
+    margin-left: 10px;
+    padding: 9%;
+    font-style: normal;
+    padding-left: 1px;
+
+}
+
+.main-section
+{
+    display: flex;
+    flex-direction: column; /*Amra: Dodala */
+    width: 89%;
+    height: 100px;
+    justify-content: space-between;
+    padding-top: 90px;
+    padding-left: 10px;
+    transition: ease-out 0.5s;
+    
+    
+    
+}
+#prvaskila
+{
+    width: 100px;
+    
+    
+}
+
+#druga
+{
+    width: 100px;
+    
+}
+
+#treca
+{
+    
+    width: 100px;
+}
+#cetvrta
+{
+    width: 100px;
+    
+}
+img {
+    width: 200px;
+}
+
+
+#Dashboard
+{
+    position: absolute;
+    margin-top: -65px;
+    padding-top: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#menu
+{
+
+  
+   
+        position: absolute;
+        width: 45px;
+        margin-top: 6px;
+        cursor: pointer;
+        padding-left: 9px;
+        
+        
+    
+}
+.dashboard_1
+{
+    width: 44px;
+    position: absolute;
+    margin-top: -53px;
+    margin-left: -20px;
+    
+   
+}
+@media   screen and (max-width: 1050px){
+    .flex_itme_1{
+        width: 300px;
+        padding-left: 28px;
+    }
+    h3{
+    display: block;
+    font-size: 1.1em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-left: -10px;
+    }
+    .side-bar {
+        
+        margin-left: -10px;
+        height: 130vh;
+        margin-top: 0px;
+        background-color: #141815;
+    }
+    img {
+        width: 170px;
+    }
+    #menu
+    {
+    position: absolute;
+    width: 37px;
+   
+    margin-top: 10px;
+    margin-left: -60px;
+    cursor: pointer;
+    }
+    .dashboard_1{
+    width: 38px;
+    position: absolute;
+    margin-top: -42px;
+    margin-left: -20px;
+    }
+}
+.tracking-in-expand {
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -4em;
+      opacity: 1;
+    }
+    40% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+ .tracking-in-contract-bck {
+	-webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+.roll-in-left {
+	-webkit-animation: roll-in-left 1s ease-out both;
+	        animation: roll-in-left 1s ease-out both;
+}
+
+ @-webkit-keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+.slide-in-top {
+	-webkit-animation: slide-in-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+.dark-mode
+{
+    background-color: #141815;
+    color: #fff;
+    transition: 1s;
+}
+.dash
+{
+  background-color: #121615;
+}
+
+.dash::before{    
+  content: '';
+  background: #237b87;
+  width: 26px;
+  height: 67px;
+  
+  position:absolute;
+  margin-left: -70px;
+  margin-top: -22px;
+
+}
+.side-bar ul a li:hover:before{    
+  content: '';
+  background: #237b87;
+  width: 26px;
+  height: 67px;
+  
+  position:absolute;
+  margin-left: -70px;
+  margin-top: -22px;
+
+}
+.side-bar ul a li:hover
+{
+  background-color: #121615;
+}
+
+
+/*MANAGE BRANDS STYLE - Amra*/
+
+/*start: Title*/
+
+.TitleBar {
+  display: flex;
+}
+
+.Title {
+  flex-grow: 1;
+}
+
+.tracking-in-contract-bck {
+display: flex;
+justify-content: baseline;
+}
+
+.tracking-in-contract-bck .SiteLocation {
+margin-left: 38rem; /*Amra: Needed to be adjusted*/
+}
+
+.SiteLocation {
+  display: flex;
+  justify-content: baseline;
+}
+
+.HomeIcon {
+padding-right: 0.5rem;
+}
+
+.LocationArrow {
+padding-right: 1rem;
+padding-left: 0.5rem;
+}
+
+/*end: Title*/
+
+
+/*start: Boxmain*/
+
+#BoxMain{
+background-color: white;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh; /*Visina div-a unutar kojeg se nalazi chart*/
+}
+
+#BoxMain h6 {
+margin: 2rem 0 1.5rem 0.3rem;
+font-size: 1.3rem;
+}
+
+/*end: Boxmain*/
+
+
+/*start: Period and Submit*/
+
+.FirstBoxMain {
+  background: #fff;
+  padding-top: 0.5rem;
+}
+
+.EntriesSelect {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 15.5rem;
+  }
+  
+  .EntriesSelect p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  }
+  
+  select {
+  width: 4rem;
+  height: 2rem;
+  box-shadow:  0 0 0.2rem 0.2rem rgb(230, 227, 227);
+  padding: 0.2rem 0.2rem;
+  font-size: 0.8rem;
+  background-color: rgb(255, 253, 253);
+  border: 0.063rem solid black;
+  border-radius: .5rem;
+  }
+
+  .Product {
+    width: 6rem;
+    margin-right: 5rem;
+  }
+  
+  .EntriesSelect {
+  position: relative;
+  }
+  
+  .left {
+  display: flex;
+  align-items: baseline;
+  }
+  
+  .right {
+  display: flex;
+  margin-right: 1rem;
+  font-size: 1rem;
+  padding-right: 1rem;
+ }
+  
+  .BtnSubmit {
+  width: 4rem;
+  height: 2rem;
+  box-shadow:  0 0 0.2rem 0.2rem rgb(230, 227, 227);
+  padding: 0.2rem 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: rgba(35, 125, 193, 0.973);
+  border: 0.063rem solid silver;
+  border-radius: .5rem;
+  cursor: pointer;
+  color: #fff;
+  }
+  
+/*end: Period and Submit*/
+
+
+/*start: Title - Chart and Table*/
+.FirstBoxMain h4 {
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+  color: black;
+}
+/*start: Title - Chart and Table*/
+
+
+/*start: Chart*/
+
+.Chart {
+  margin-top: 2rem;
+  width: 62.5rem;
+  height: 25rem;
+  display: block;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+.Numbers {
+  color: black;
+  margin: 0;
+  padding: 0;
+  width: 1.25rem;
+  height: 100%;
+  display: inline-block;
+  
+}
+
+.Numbers li {
+  list-style: none;
+  height: 2.313rem; /*razmak izmedju brojeva na y-osi*/
+  position: relative;
+  bottom: 0.375rem;
+}
+
+.Numbers span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  right: -1.875rem; /*udaljenost charta od sidebar-a*/
+  left: 0rem;
+}
+
+.Bars {
+  color: black;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: white;
+  margin: 0;
+  margin-left: 2.2rem;
+  padding: 0;
+  display: inline-block;
+  width: 46.875rem;
+  height: 25rem;
+  box-shadow: 0 0 0.625rem 0 #555;
+  border-radius: 0.313rem;
+  margin-bottom: 3rem;
+}
+
+.Bars li {
+  display: table-cell;
+  width: 5rem;
+  height: 18.75rem;
+  position: relative;
+  bottom: -3.125rem;
+}
+
+.Bars span {
+  width: 100%;
+  position: absolute;
+  bottom: -5rem;
+  text-align: center;
+}
+
+.Bars #Bar {
+  display: block;
+  background: #266da3;
+  width: 3.125rem;
+  position: absolute;
+  bottom: -3.125rem;
+  left: 0.438rem;
+  text-align: center;
+  box-shadow: 0 0 0.625rem 0 rgba(35, 125, 193, 0.5);
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+
+.Bars #Bar:hover {
+  background-color: #BDBFBF;
+  box-shadow: 0 0 10.625rem 0 rgba(189, 191, 191, 0.5);
+  cursor: pointer;
+  color: black;
+}
+
+.Bars #Bar:before {
+  color: #fff;
+  content: 'Qty ' attr(month);
+  position: relative;
+  bottom: 0.039rem;
+}
+
+.Bars .BarJan {
+  height: 5rem;
+}
+
+.Bars .BarFeb {
+  height: 2.5rem;
+}
+
+.Bars .BarMar {
+  height: 9.375rem;
+}
+
+.Bars .BarApr {
+  height: 15.625rem;
+}
+
+.Bars .BarMay {
+  height: 5rem;
+}
+
+.Bars .BarJun {
+  height: 11.875rem;
+}
+
+.Bars .BarJul {
+  height: 18.125rem;
+}
+
+.Bars .BarAug {
+  height: 23.125rem;
+}
+
+.Bars .BarSep {
+  height: 13.75rem;
+}
+
+.Bars .BarOct {
+  height: 20rem;
+}
+
+.Bars .BarNov {
+  height: 5rem;
+}
+
+.Bars .BarDec {
+  height: 11.875rem;
+}
+
+/*end: Chart*/
+
+
+/*start: Table Section*/
+
+.Table {
+width: 80%;
+margin-right: auto;
+margin-left: auto;
+margin-top: 3rem;
+margin-bottom: 3rem;
+}
+
+table {
+table-layout: fixed;
+width: 100%;
+text-align: left;
+padding-left: 0.5rem;
+box-shadow: 0 0 0.5rem 0.5rem rgb(230, 227, 227);
+}
+
+th {
+font-size: 1rem;
+}
+
+td {
+font-size: 0.85rem;
+padding-left: 4rem;
+padding-top: 1rem;
+}
+
+tr:nth-child(even) {
+background-color: rgb(230, 227, 227);
+}
+
+.TableSum {
+  background-color: rgb(196, 195, 195);
+  font-weight: 600;
+  font-size: 1rem;
+  border-top: 1 rem solid black;
+}
+
+/*end: Table Section*/
+
+
+
+
+
+
+

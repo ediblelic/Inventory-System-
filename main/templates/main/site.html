@@ -1,0 +1,70 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="{% static  'style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Inventory System | Management</title>
+</head>
+<body>
+    <div class="container">
+        <div class="flex_itme_1">
+            <h3>INVENTORY SYSTEM</h3>
+            
+            
+        </div>
+        <div class="flex_itme_2">
+            
+            <img class="sun"  id="light" src="../../../static/light_mode.png" alt="">
+            <img src="../../../static/light_mode_off1.png" class='sun-off' id="sunoff" alt="dsada">
+            <img class="moon" id="dark" src="../../../static/dark_mode_off.png" alt="">
+            <img src="../../../static/dark_mode_on.png" class="dark-on" id="darkon" alt="">
+               
+            <img id='menu'src="../../../static/menu.png" alt="">
+        </div>
+        
+    </div>
+    <div class="hero-section">
+        <div class="side-bar" id="side_bar">
+            
+            <ul>
+                <i><a href="#"><li class="dash"><i class="fa fa-tachometer">
+                    
+                </i> Dashboard </li></a></i>
+               
+                <i><a href="users/"><li><i class="fa fa-group"></i> Users </li></a></i>
+                <i><a href="groups/"><li><i class="fa fa-address-book"></i> Groups </li></a></i>
+                <i><a href="brands/"><li><i class="fa fa-tag"></i> Brends </li></a></i>
+                <i><a href="category/"><li><i class="fa fa-qrcode"></i> Catagory </li></a></i>
+                <i><a href="stores/"><li><i class="fa fa-shopping-cart"></i> Stors </li></a></i>
+                <i><a href="attributes/"><li><i class="fa fa fa-info-circle"></i> Attributes </li></a></i>
+                <i><a href="products/"><li><i class="fa fa-cubes"></i> Products </li></a></i>
+                <i><a href="orders/"><li><i class="fa fa-money"></i> Orders </li></a></i>
+                <i><a href="reports/"><li><i class="fa fa-bullhorn"></i> Reports </li></a></i>
+                <i><a href="company/"><li><i class="fa fa-institution"></i> Company </li></a></i>
+                <i><a href="profile/"><li><i class="fa fa-address-card-o"></i> Profile </li></a></i>
+                <i><a href="settings/"><li><i class="fa fa-wrench"></i> Settings </li></a></i>
+                <i><a href="{% url 'logout' %}"><li><i class="fa fa-mail-reply"></i> Logout </li></a></i>
+            </ul>
+        </div>
+        <div class="main-section" id="main-section"> 
+            <!-- Glavna sekcija sajta desni grid, gdje se nalazi dashboard
+            
+                samo ovo sekciju mjenjati
+            -->
+            <h2  id="Dashboard">Dashboard: Control Panel</h2>
+            <div  id="prvaskila"><img src="../../../static/total-products.png" alt=""></div>
+            <div  id="druga"><img src="../../../static/total-paid.png" alt=""></div>
+            <div  id="treca"><img src="../../../static/total-stores.png" alt=""></div>
+            <div  id="cetvrta"><img src="../../../static/total-users.png" alt=""></div>
+            
+          
+        </div>
+    </div>
+<script src="../../../static/dark.js"></script>
+<script src="../../../static/hamburger_effect.js"></script>
+</body>
+</html>

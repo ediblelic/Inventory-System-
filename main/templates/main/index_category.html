@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style_category.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--link for font awesome: -->
+    <script src="https://kit.fontawesome.com/3a2b272b3f.js" crossorigin="anonymous"></script>
+    <title>Inventory System | Manage Category</title>
+</head>
+<body>
+    <div class="container">
+        <div class="flex_itme_1">
+            <h3>INVENTORY SYSTEM</h3>
+            
+        </div>
+        <div class="flex_itme_2">
+            <img class="sun"  id="light" src="../../../static/light_mode.png" alt="">
+            <img src="../../../static/light_mode_off1.png" class='sun-off' id="sunoff" alt="">
+            <img class="moon" id="dark" src="../../../static/dark_mode_off.png" alt="">
+            <img src="../../../static/dark_mode_on.png" class="dark-on" id="darkon" alt="">
+            
+            <img id='menu'src="../../../static/menu.png" alt="">
+        </div>
+        
+    </div>
+    <div class="hero-section">
+        <div class="side-bar" id="side_bar">
+            
+            <ul>
+                <i><a href="../"><li><i class="fa fa-tachometer"></i> Dashboard </li></a></i>
+                <i><a href="../users"><li><i class="fa fa-group"></i> Users </li></a></i>
+                <i><a href="../groups"><li><i class="fa fa-address-book"></i> Groups </li></a></i>
+                <i><a href="../brands"><li ><i class="fa fa-tag"></i> Brands </li></a></i>
+                
+                <i><a href=""><li class="dash"><i class="fa fa-qrcode"></i> Category </li></a></i>
+                
+                <i><a href="../stores"><li><i class="fa fa-shopping-cart"></i> Stores </li></a></i>
+                <i><a href="../attributes/"><li><i class="fa fa fa-info-circle"></i> Attributes </li></a></i>
+                <i><a href="../products"><li><i class="fa fa-cubes"></i> Products </li></a></i>
+                <i><a href="../orders"><li><i class="fa fa-money"></i> Orders </li></a></i>
+                <i><a href="../reports"><li><i class="fa fa-bullhorn"></i> Reports </li></a></i>
+                <i><a href="#"><li><i class="fa fa-institution"></i> Company </li></a></i>
+                <i><a href="#"><li><i class="fa fa-address-card-o"></i> Profile </li></a></i>
+                <i><a href="#"><li><i class="fa fa-wrench"></i> Settings </li></a></i>
+                <i><a href="{% url 'logout'%}"><li><i class="fa fa-mail-reply"></i> Logout </li></a></i>
+            </ul>
+        </div>
+        <div class="main-section" id="main-section">
+            <!-- Glavna sekcija sajta desni grid, gdje se nalazi dashboard
+            
+                samo ovo sekciju mjenjati
+            -->
+            <!--start: Title-->
+            <div class="TitleBar">
+                <div class="Title">
+                    <div class="tracking-in-contract-bck" id="Dashboard">
+                        <h2 >Manage <span class="ManageSection"> Category </span> </h2>
+                        <div class="SiteLocation"> 
+                            <div class="Home">
+                                <h4> <span class="HomeIcon"> <i class="fa-solid fa-house"></i> </span>  Home  <span class="LocationArrow"> <i class="fa-solid fa-arrow-right"></i> </span>  </h4>
+                            </div>
+                            <div class="Section">  
+                                <h5> Category </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end: Title-->
+
+            <!--start: Button-->
+            <div class="AddButton">
+                <button class="BtnAdd"> Add Category </button>
+            </div>
+            <!--end: Button-->
+
+            <div id="BoxMain">
+                <!--start: Show Entries and Search Bar-->
+                    <h6>Manage Categories</h6>    
+                    <div class="EntriesSelect">
+                        <div class="left">
+                            <p>Show</p>
+                            <select>
+                                <option value=""> 10 </option>
+                                <option value=""> 15 </option>
+                                <option value=""> 20 </option>
+                                <option value=""> 25 </option>
+                                <option value=""> 30 </option>
+                            </select>
+                            <p>entries</p>
+                        </div>
+                        <div class="right">
+                            <form action="">
+                                <label>Search:</label>
+                                <input type="search">
+                            </form>
+                        </div>
+                    </div>
+                <!--end: Show Entries and Search Bar-->
+    
+                <!--start: Table-->
+                    <div class="Table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Category Name</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Category 1</td>
+                                    <td>Active</td>
+                                    <td>Added</td>
+                                </tr>
+                                <tr>
+                                    <td>Category 2</td>
+                                    <td>Active</td>
+                                    <td>Updated</td>
+                                </tr>
+                                <tr>
+                                    <td>Category 3</td>
+                                    <td>Inactive</td>
+                                    <td>Updated</td>
+                                </tr>
+                                <tr>
+                                    <td>Category 4</td>
+                                    <td>Active</td>
+                                    <td>Updated</td>
+                                </tr>
+                                <tr>
+                                    <td>Category 5</td>
+                                    <td>Active</td>
+                                    <td>Added</td>
+                                </tr>
+                                <tr>
+                                    <td>Category 6</td>
+                                    <td>Active</td>
+                                    <td>Updated</td>
+                                </tr>
+                                <tr>
+                                    <td>Category 7</td>
+                                    <td>Inactive</td>
+                                    <td>Updated</td>
+                                </tr>
+                                <tr>
+                                    <td>Category 8</td>
+                                    <td>Active</td>
+                                    <td>Updated</td>
+                                </tr>
+                                <tr>
+                                    <td>Category 9</td>
+                                    <td>Inactive</td>
+                                    <td>Updated</td>
+                                </tr>
+                                <tr>
+                                    <td>Category 10</td>
+                                    <td>Active</td>
+                                    <td>Updated</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                <!--end: Table-->                    
+                
+                <!--start: Below Table-->
+                    <div class="BelowTable">
+                        <div class="BelowLeft">
+                            <p>Showing 10 of 10 results</p>
+                        </div>
+                        <div class="BelowRight">
+                            <button class="LeftButton"> <a href="">Previous </a> </button>
+                            <button class="MiddleButton"> <a href=""> <span class="PageNumber"> 1 </span> </a> </button>
+                            <button class="RightButton"> <a href="">Next</a> </button>
+                        </div>
+                    </div>
+                <!--end: Below Table-->
+    
+                    </div>
+            
+        </div>
+    </div>
+
+<script src="../../../static/dark.js"></script>
+<script src="../../../static/hamburger_effect.js"></script>
+</body>
+</html>

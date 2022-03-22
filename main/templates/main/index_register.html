@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style_register.css' %}">
+    <title>Register</title>
+</head>
+<body>
+    <div id="login-box">
+        <div class="left">
+            <form method="post" action="">
+          <h1>Sign up</h1>
+          {% csrf_token %}
+          {{form.username}}
+          
+          {{form.email}}
+          {{form.password1}}
+          {{form.password2}}
+          
+          <input type="submit" name="signup_submit" value="Sign me up" />
+           
+              <p style="position: absolute; margin-left: -20px;">{{form.errors}}</p>
+            
+          {%for x in messages%}
+            <p class="messages">{{x}}</p>
+          {%endfor%}
+        </div>
+            </form>
+        <div class="right">
+          <span class="loginwith">Sign in with<br />social network</span>
+          
+          <button class="social-signin facebook">Log in with facebook</button>
+          <button class="social-signin twitter">Log in with Twitter</button>
+          <button class="social-signin google">Log in with Google+</button>
+        </div>
+        <div class="or">OR</div>
+      </div>
+
+      <script src="../../../static/placeholders.js"></script>
+</body>
+</html>
+
+
+
